@@ -96,6 +96,18 @@ data_subset_ancientsinglegenome <- data_raw_ancientsinglegenome |>
 
 ### Ancient Human Genomes
 
+Pull summary statistics with Poseidon's trident
+
+```{bash}
+trident list --packages --remote --raw > figure1/ancienthumangenomewidedata.tsv
+```
+
+Filter to latest data, remove modern human data
+
+```{r}
+data_raw_ancienthuman <- read_tsv('ancienthumangenomewidedata.tsv')
+```
+
 ### Combine Data
 
 ```{r}

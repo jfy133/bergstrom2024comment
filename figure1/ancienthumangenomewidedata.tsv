@@ -1,0 +1,221 @@
+Package	Package Version	Is Latest	Poseidon Version	Description	Last modified	Nr Individuals
+2010_RasmussenNature	2.1.1	True	2.5.0	A Palaeo-Eskimo from Greenland. Originally AADR v42.4.	2023-07-11	1
+2012_KellerNatureCommunications	2.1.1	True	2.5.0	Copper age Tyrolean Iceman (Oetzi). Originally AADR v42.4.	2023-07-11	1
+2012_MeyerScience	2.1.1	True	2.5.0	A small number of modern reference samples from Africa and Europe. Originally AADR v42.4.	2023-07-11	6
+2012_PattersonGenetics	2.1.1	False	2.5.0	A large collection of modern samples from all around the world. Originally AADR v42.4.	2023-07-11	1036
+2012_PattersonGenetics	2.1.3	True	2.5.0	A large collection of modern samples from all around the world. Originally AADR v42.4.	2023-09-25	1036
+2012_PickrellNatureCommunications	2.1.1	False	2.5.0	23 modern southern and eastern African populations. Originally AADR v42.4.	2023-07-11	9
+2012_PickrellNatureCommunications	2.1.2	True	2.5.0	23 modern southern and eastern African populations. Originally AADR v42.4.	2023-09-14	9
+2014_FuNature	2.1.1	True	2.5.0	A 45000-year-old modern human from Siberia. Originally AADR v42.4.	2023-07-11	1
+2014_GambaNatureCommunications	2.1.1	True	2.5.0	Hungarian Neolithic, Copper, Bronze and Iron Age individuals. Originally AADR v42.4.	2023-07-11	13
+2014_LazaridisNature	3.1.1	False	2.7.0	Early Farmers and Hunter Gatherers from Central and Northern Europe. This package does not include all published individuals, see README for details. Originally AADR v42.4.	2023-07-11	1202
+2014_LazaridisNature	4.0.0	False	2.7.0	Early Farmers and Hunter Gatherers from Central and Northern Europe. This package does not include all published individuals, see README for details. Originally AADR v42.4.	2023-07-26	1202
+2014_LazaridisNature	4.0.2	True	2.7.0	Early Farmers and Hunter Gatherers from Central and Northern Europe. This package does not include all published individuals, see README for details. Originally AADR v42.4.	2023-09-25	1202
+2014_MalaspinasCurrentBiology	2.1.1	True	2.5.0	Modern era individuals from Brazil. Originally AADR v42.4.	2023-07-11	2
+2014_OlaldeNature	2.1.1	True	2.5.0	A Mesolithic individual from Spain. Originally AADR v42.4.	2023-07-11	1
+2014_RaghavanNature	2.1.1	True	2.5.0	Two Paleolithic individuals from Mal’ta and Afontova Gora in Siberia with multiple modern Eurasian reference samples. Originally AADR v42.4.	2023-07-11	6
+2014_RaghavanScience	2.1.1	True	2.5.0	Ancient individuals from Arctic Siberia, Alaska, Canada, and Greenland. Originally AADR v42.4.	2023-07-11	4
+2014_RasmussenNature	2.1.1	True	2.5.0	One ancient Clovis complex individual (Anzick-1) from North America and two modern American reference samples. Originally AADR v42.4.	2023-07-11	3
+2014_SeguinOrlandoScience	2.1.1	True	2.5.0	A Paleolithic modern human sample from European Russia (Kostenki14). Originally AADR v42.4.	2023-07-11	1
+2014_SkoglundScience	2.1.1	True	2.5.0	Mesolithic and Neolithic samples from Sweden and Gotland. Originally AADR v42.4.	2023-07-11	11
+2015_1000Genomes_1240K_haploid_pulldown	2.1.1	False	2.5.0	1000 Genomes project data pulled down to the 1240K SNP array. Originally AADR v42.4.	2023-07-11	2535
+2015_1000Genomes_1240K_haploid_pulldown	2.1.2	True	2.5.0	1000 Genomes project data pulled down to the 1240K SNP array. Originally AADR v42.4.	2023-09-25	2535
+2015_AllentoftNature	2.1.1	True	2.5.0	Bronze Age samples from Europe. Originally AADR v42.4.	2023-07-11	98
+2015_CassidyPNAS	2.1.1	True	2.5.0	Neolithic and Bronze Age samples from Ireland. Originally AADR v42.4.	2023-07-11	4
+2015_FuNature	2.1.1	True	2.5.0	A Palaeolithic sample from Romania (Oase1). Originally AADR v42.4.	2023-07-11	1
+2015_GuntherPNAS	2.1.1	True	2.5.0	Neolithic and Bronze Age samples from Spain. Originally AADR v42.4.	2023-07-11	5
+2015_JonesNatureCommunications	2.1.1	True	2.5.0	Upper Palaeolithic and Mesolithic samples from Switzerland and Georgia. Originally AADR v42.4.	2023-07-11	3
+2015_LlorenteScience	2.1.1	True	2.5.0	An ancient Ethiopian individual (Mota). Originally AADR v42.4.	2023-07-11	1
+2015_MathiesonNature	2.1.1	True	2.5.0	Neolithic to Iron Age samples from Western Eurasia. Originally AADR v42.4.	2023-07-11	142
+2015_OlaldeMBE	2.1.1	True	2.5.0	An Early Neolithic sample from Iberia. Originally AADR v42.4.	2023-07-11	1
+2015_RaghavanScience	2.1.1	True	2.5.0	Diachronic transect of ancient individuals from the Americas. Originally AADR v42.4.	2023-07-11	23
+2015_RasmussenNature	2.1.1	True	2.5.0	An ancient North American individual (Kennewick Man). Originally AADR v42.4.	2023-07-11	1
+2016_BroushakiScience	2.1.1	True	2.5.0	Early Neolithic samples from Iran. Originally AADR v42.4.	2023-07-11	5
+2016_FuNature	2.1.1	True	2.5.0	Upper Palaeolithic samples from Europe. Originally AADR v42.4.	2023-07-11	40
+2016_HofmanovaPNAS	2.1.1	True	2.5.0	Neolithic samples from Turkey and Greece. Originally AADR v42.4.	2023-07-11	5
+2016_JeongPNAS	2.1.1	True	2.5.0	Diachronic samples from the Himalayan arc. Originally AADR v42.4.	2023-07-11	8
+2016_KanzawaJHG	2.1.1	True	2.5.0	Jomon period samples from Japan. Originally AADR v42.4.	2023-07-11	5
+2016_KilincCurrentBiology	2.1.1	True	2.5.0	Neolithic samples from Turkey. Originally AADR v42.4.	2023-07-11	9
+2016_LazaridisNature	2.1.1	False	2.5.0	Ancient Near Eastern samples from the Mesolithic to the Bronze Age. Also modern reference samples from Europe, the Near East and Northern Africa. Originally AADR v42.4.	2023-07-11	169
+2016_LazaridisNature	2.1.3	True	2.5.0	Ancient Near Eastern samples from the Mesolithic to the Bronze Age. Also modern reference samples from Europe, the Near East and Northern Africa. Originally AADR v42.4.	2023-09-25	169
+2016_Mallick_SGDP1240K_diploid_pulldown	2.1.1	False	2.5.0	Modern samples from all around the world (Simons Genome Diversity Project - SGDP). Originally AADR v42.4.	2023-07-11	280
+2016_Mallick_SGDP1240K_diploid_pulldown	2.1.2	True	2.5.0	Modern samples from all around the world (Simons Genome Diversity Project - SGDP). Originally AADR v42.4.	2023-11-07	280
+2016_MartinianoNatureCommunications	2.1.1	True	2.5.0	Iron Age, Roman Era and Early Medieval samples from Great Britain. Originally AADR v42.4.	2023-07-11	9
+2016_MondalNatureGenetics	2.1.1	True	2.5.0	Samples from different modern populations from India. Originally AADR v42.4.	2023-07-11	70
+2016_OmrakCurrentBiology	2.1.1	True	2.5.0	Neolithic samples from Turkey. Originally AADR v42.4.	2023-07-11	2
+2016_SchiffelsNatureCommunications	2.1.1	True	2.5.0	Iron Age and Early Medieval samples from Great Britain. Originally AADR v42.4.	2023-07-11	10
+2016_SkoglundNature	2.1.1	False	2.5.0	Modern and ancient samples from Southeast Asia and Oceania. Originally AADR v42.4.	2023-07-11	74
+2016_SkoglundNature	2.1.2	True	2.5.0	Modern and ancient samples from Southeast Asia and Oceania. Originally AADR v42.4.	2023-09-14	74
+2017_GonzalesFortesCurrentBiology	2.1.1	True	2.5.0	Mesolithic samples from Romania and Spain. Originally AADR v42.4.	2023-07-11	6
+2017_HaberAJHG	2.1.1	True	2.5.0	Bronze Age samples from Lebanon. Originally AADR v42.4.	2023-07-11	5
+2017_JonesCurrentBiology	2.1.1	True	2.5.0	Mesolithic and Neolithic samples from Latvia and Ukraine. Originally AADR v42.4.	2023-07-11	8
+2017_KennettNatureCommunications	2.1.1	True	2.5.0	Samples from Chaco Canyon in the Southwestern United States. Originally AADR v42.4.	2023-07-11	5
+2017_LazaridisNature	2.1.1	True	2.5.0	Minoan and Mycenaean samples from Crete. Originally AADR v42.4.	2023-07-11	20
+2017_LindoPNAS	2.1.1	True	2.5.0	Ancient individuals from the North American Northwest Coast. Originally AADR v42.4.	2023-07-11	1
+2017_LipsonNature	2.1.1	True	2.5.0	Mesolithic and Neolithic samples from different European countries. Originally AADR v42.4.	2023-07-11	138
+2017_MartinianoPLoSGenetics	2.1.1	True	2.5.0	Neolithic and Bronze Age samples from Iberia. Originally AADR v42.4.	2023-07-11	14
+2017_PrueferScience	2.1.1	True	2.5.0	Versions of the Loschbour and Ust'-Ishim samples. Originally AADR v42.4.	2023-07-11	2
+2017_RodriguezVarelaCurrentBiology	2.1.1	True	2.5.0	Pre-European conquest samples from the Canary Islands. Originally AADR v42.4.	2023-07-11	5
+2017_SaagCurrentBiology	2.1.1	True	2.5.0	Neolithic samples from Estonia. Originally AADR v42.4.	2023-07-11	7
+2017_SchlebuschScience	2.1.1	True	2.5.0	Ancient samples from South Africa. Originally AADR v42.4.	2023-07-11	7
+2017_Schuenemann_EgyptianMummies	2.1.1	True	2.5.0	Three samples from Egyptian mummies. Originally AADR v42.4.	2023-07-11	3
+2017_SikoraScience	2.1.1	True	2.5.0	Upper Palaeolithic samples from Russia. Originally AADR v42.4.	2023-07-11	7
+2017_SkoglundCell	2.1.1	False	2.5.0	Ancient samples from Malawi (Africa). Originally AADR v42.4.	2023-07-11	59
+2017_SkoglundCell	2.1.2	True	2.5.0	Ancient samples from Malawi (Africa). Originally AADR v42.4.	2023-09-14	59
+2017_UnterlanderNatureCommunications	2.1.1	True	2.5.0	Iron Age samples from the Eurasian steppe. Originally AADR v42.4.	2023-07-11	8
+2017_VanDenBrink	2.1.1	True	2.5.0	Bronze Age samples from a burial context in Israel. Originally AADR v42.4.	2023-07-11	2
+2017_VyasAJPA	2.1.1	False	2.5.0	Modern reference samples from African and Arabian populations. Originally AADR v42.4.	2023-07-11	93
+2017_VyasAJPA	2.1.2	True	2.5.0	Modern reference samples from African and Arabian populations. Originally AADR v42.4.	2023-09-14	93
+2017_YangCurrentBiology	2.1.1	True	2.5.0	A Palaeolithic sample from China. Originally AADR v42.4.	2023-07-11	1
+2018_AmorimNatureCommunications	2.1.1	True	2.5.0	Individuals from early Medieval Hungary and Italy. Originally AADR v42.4.	2023-07-11	63
+2018_DamgaardNature	2.1.1	True	2.5.0	137 individuals from the Eurasian Steppes. Originally AADR v42.4.	2023-07-11	137
+2018_DamgaardScience	2.1.1	True	2.5.0	Individuals from the first horse herders Inner Asia and Anatolia. Originally AADR v42.4.	2023-07-11	111
+2018_Ebenesersdottir_Iceland	2.1.1	True	2.5.0	Ancient genomes from Iceland. Originally AADR v42.4.	2023-07-11	27
+2018_FernandesScientificReports	2.1.1	True	2.5.0	Neolithic and Bronze Age samples from Poland. Originally AADR v42.4.	2023-07-11	17
+2018_FregelPNAS	2.1.1	True	2.5.0	Ancient genomes from North Africa and the Levant. Originally AADR v42.4.	2023-07-11	12
+2018_GuntherPLoSBiology	2.1.1	True	2.5.0	Individuals from Mesolithic Scandinavia. Originally AADR v42.4.	2023-07-11	7
+2018_HarneyMayNatureCommunications	2.1.1	True	2.5.0	Individuals from Chalcolithic Israel. Originally AADR v42.4.	2023-07-11	22
+2018_Jeong_EurasianSteppe	2.1.1	True	2.5.0	Individuals from the eastern Eurasian Steppe. Originally AADR v42.4.	2023-07-11	20
+2018_KrzewinskaCurrentBiology	2.1.1	True	2.5.0	Ancient Viking genomes. Originally AADR v42.4.	2023-07-11	23
+2018_KrzewinskaScienceAdvances	2.1.1	True	2.5.0	Iron Age individuals from the Steppe. Originally AADR v42.4.	2023-07-11	35
+2018_Lamnidis_Fennoscandia	2.1.0	True	2.5.0	Ancient genomes from Finland and Russia.	2023-07-04	16
+2018_LindoScienceAdvances	2.1.1	True	2.5.0	Ancient genomes from South America. Originally AADR v42.4.	2023-07-11	7
+2018_LipsonCurrentBiology	2.1.1	True	2.5.0	Ancient genomes from Remote Oceania. Originally AADR v42.4.	2023-07-11	22
+2018_LipsonScience	2.1.1	True	2.5.0	Ancient genomes from South East Asia. Originally AADR v42.4.	2023-07-11	25
+2018_MathiesonNature	2.1.1	True	2.5.0	Ancient genomes from Southeastern Europe. Originally AADR v42.4.	2023-07-11	226
+2018_McCollScience	2.1.1	True	2.5.0	Ancient genomes from Southeast Asia. Originally AADR v42.4.	2023-07-11	28
+2018_Mittnik_Baltic	2.1.1	True	2.5.0	Ancient genomes from around the Baltic Sea. Originally AADR v42.4.	2023-07-11	39
+2018_MorenoMayarNature	2.1.1	True	2.5.0	An Upper Pleistocene genome from Alaska. Originally AADR v42.4.	2023-07-11	2
+2018_MorenoMayarScience	2.1.1	True	2.5.0	Ancient genomes from South America. Originally AADR v42.4.	2023-07-11	17
+2018_OlaldeNature	2.1.1	True	2.5.0	Ancient genomes from the Bell Beaker period in Europe. Originally AADR v42.4.	2023-07-11	398
+2018_PosthNatureEcologyEvolution	2.1.1	True	2.5.0	Ancient genomes from Remote Oceania. Originally AADR v42.4.	2023-07-11	19
+2018_Posth_SouthAmerica	2.1.1	True	2.5.0	Ancient genomes from South America. Originally AADR v42.4.	2023-07-11	50
+2018_ScheibScience	2.1.1	True	2.5.0	Ancient genomes from North America. Originally AADR v42.4.	2023-07-11	75
+2018_SchroederPNAS	2.1.1	True	2.5.0	An ancient genome from the Carribean. Originally AADR v42.4.	2023-07-11	1
+2018_ValdioseraPNAS	2.1.1	True	2.5.0	Ancient genomes from Iberia. Originally AADR v42.4.	2023-07-11	11
+2018_VanDeLoosdrecht_Morrocco	2.1.1	True	2.5.0	Ancient genomes from Morocco. Originally AADR v42.4.	2023-07-11	7
+2018_VeeramahPNAS	2.2.1	True	2.7.1	Ancient genomes from Southern Germany. Originally AADR v42.4.	2023-07-11	41
+2018_Zalloua_Phoenician	2.1.1	True	2.5.0	Ancient genomic data from Phoenician human remains. Originally AADR v42.4.	2023-07-11	1
+2018_delaFuentePNAS	2.1.1	True	2.5.0	Ancient individuals from Patagonia. Originally AADR v42.4.	2023-07-11	4
+2019_Antonio_AncientRome	2.2.0	True	2.7.1	Ancient genomes from in and around Rome covering the last 12000 years. Originally AADR v42.4.	2023-07-04	134
+2019_Biagini_Spain	2.2.0	False	2.5.0	People from Ibiza - an unexpected isolate in the Western Mediterranean. Originally AADR v42.4.	2023-07-04	120
+2019_Biagini_Spain	2.2.1	True	2.5.0	People from Ibiza - an unexpected isolate in the Western Mediterranean. Originally AADR v42.4.	2023-09-25	120
+2019_BraceNatureEcologyEvolution	2.1.0	True	2.5.0	Originally AADR v42.4.	2023-07-04	14
+2019_Brace_Britain	2.1.0	False	2.5.0	Originally AADR v42.4.	2023-07-04	56
+2019_Brace_Britain	3.0.0	False	2.7.1	Originally AADR v42.4.	2023-07-26	70
+2019_Brace_Britain	3.1.0	True	2.7.1	Originally AADR v42.4.	2024-01-25	70
+2019_Feldman_Anatolia	2.2.0	True	2.7.1	Late Pleistocene human genome suggests a local origin for the first farmers of central Anatolia. Originally AADR v42.4.	2023-07-04	8
+2019_Feldman_Philistines	2.2.0	True	2.7.1	Ancient DNA sheds light on the genetic origins of early Iron Age Philistines. Originally AADR v42.4.	2023-07-04	10
+2019_Flegontov_PalaeoEskimo	2.2.0	False	2.7.1	Palaeo-Eskimo genetic ancestry and the peopling of Chukotka and North America. Originally AADR v42.4.	2023-07-04	107
+2019_Flegontov_PalaeoEskimo	2.2.1	True	2.7.1	Palaeo-Eskimo genetic ancestry and the peopling of Chukotka and North America. Originally AADR v42.4.	2023-09-14	107
+2019_GonzalesFortes_Iberia	2.2.0	True	2.7.1	A western route of prehistoric human migration from Africa into the Iberian Peninsula. Originally AADR v42.4.	2023-07-04	4
+2019_Haber_Crusaders	2.1.0	False	2.5.0	A Transient Pulse of Genetic Admixture from the Crusaders in the Near East Identified from Ancient Genome Sequences. Originally AADR v42.4.	2023-07-04	13
+2019_Haber_Crusaders	2.2.0	True	2.5.0	A Transient Pulse of Genetic Admixture from the Crusaders in the Near East Identified from Ancient Genome Sequences. Originally AADR v42.4.	2024-01-26	13
+2019_Harney_LakeRoopkund	2.2.0	True	2.7.1	Ancient DNA from the skeletons of Roopkund Lake reveals Mediterranean migrants in India. Originally AADR v42.4.	2023-07-04	38
+2019_Jarve_Scythian	2.2.0	True	2.7.1	Shifts in the Genetic Landscape of the Western Eurasian Steppe Associated with the Beginning and End of the Scythian Dominance. Originally AADR v42.4.	2023-07-04	31
+2019_Jeong_InnerEurasia	2.1.0	False	2.5.0	The genetic history of admixture across inner Eurasia. Originally AADR v42.4.	2023-07-04	765
+2019_Jeong_InnerEurasia	3.0.0	False	2.5.0	The genetic history of admixture across inner Eurasia. Originally AADR v42.4.	2023-07-26	765
+2019_Jeong_InnerEurasia	3.0.1	False	2.5.0	The genetic history of admixture across inner Eurasia. Originally AADR v42.4.	2023-09-14	765
+2019_Jeong_InnerEurasia	3.1.1	True	2.5.0	The genetic history of admixture across inner Eurasia. Originally AADR v42.4.	2024-02-13	765
+2019_Malmstrom_Scandinavia	2.2.0	True	2.7.1	The genomic ancestry of the Scandinavian Battle Axe Culture people and their relation to the broader Corded Ware horizon. Originally AADR v42.4.	2023-07-04	11
+2019_Mittnik_BAEurope	2.2.0	True	2.7.1	Kinship-based social inequality in Bronze Age Europe. Originally AADR v42.4.	2023-07-04	118
+2019_Narasimhan_centralSouthAsia	2.2.0	True	2.7.1	The formation of human populations in South and Central Asia. Originally AADR v42.4.	2023-07-04	542
+2019_Nikitin_LBK	2.2.0	True	2.7.1	Interactions between earliest Linearbandkeramik farmers and central European hunter gatherers at the dawn of European Neolithization. Originally AADR v42.4.	2023-07-04	2
+2019_Ning_Tianshan	2.2.0	True	2.7.1	Ancient Genomes Reveal Yamnaya-Related Ancestry and a Potential Source of Indo-European Speakers in Iron Age Tianshan. Originally AADR v42.4.	2023-07-04	11
+2019_Olalde_Iberia	2.2.0	True	2.7.1	The genomic history of the Iberian Peninsula over the past 8000 years. Originally AADR v42.4.	2023-07-04	277
+2019_Prendergast_EastAfrica	2.2.0	True	2.7.1	Ancient DNA reveals a multistep spread of the first herders into sub-Saharan Africa. Originally AADR v42.4.	2023-07-04	43
+2019_Saag_EasternBaltic	2.2.0	True	2.7.1	The Arrival of Siberian Ancestry Connecting the Eastern Baltic to Uralic Speakers further East. Originally AADR v42.4.	2023-07-04	56
+2019_SanchezQuinto_Megalithic	2.2.0	True	2.7.1	Megalithic tombs in western and northern Neolithic Europe were linked to a kindred society. Originally AADR v42.4.	2023-07-04	26
+2019_Schroeder_Poland	2.1.0	True	2.5.0	Unraveling ancestry, kinship, and violence in a Late Neolithic mass grave. Originally AADR v42.4.	2023-07-04	24
+2019_Shinde_Harappan	2.2.0	True	2.7.1	An Ancient Harappan Genome Lacks Ancestry from Steppe Pastoralists or Iranian Farmers. Originally AADR v42.4.	2023-07-04	1
+2019_Sikora_NorthEastSiberia	2.2.0	True	2.7.1	The population history of northeastern Siberia since the Pleistocene. Originally AADR v42.4.	2023-07-04	31
+2019_Villalba_Iberia	2.3.0	True	2.7.1	Survival of Late Pleistocene Hunter-Gatherer Ancestry in the Iberian. Originally AADR v42.4. Peninsula.	2023-07-11	11
+2019_Wang_Caucasus	2.2.0	True	2.7.1	Ancient human genome-wide data from a 3000-year interval in the Caucasus corresponds with eco-geographic regions. Originally AADR v42.4.	2023-07-04	49
+2020_AgranatTamir_LevantBA	2.2.0	True	2.7.1	Samples from the Bronze Age Levant. Originally AADR v44.3.	2023-07-04	73
+2020_BarqueraCurrentBiology	2.2.0	True	2.7.1	First generation enslaved Africans from Mexico City Royal Hospital San Jose de los Naturales.	2023-07-04	3
+2020_Bergstrom_HGDP	2.1.0	False	2.5.0	Modern genomes from all around the world (Human Genome Diversity Project - HGDP). Originally AADR v44.3.	2023-07-04	929
+2020_Bergstrom_HGDP	2.1.1	True	2.5.0	Modern genomes from all around the world (Human Genome Diversity Project - HGDP). Originally AADR v44.3.	2024-01-25	929
+2020_Bongers_SouthPeru	2.2.0	True	2.7.1	Six Late Horizon individuals from two cemeteries in the Chincha Valley of southern Peru. Originally AADR v44.3.	2023-07-04	6
+2020_Brunel_France	2.2.1	True	2.7.1	Ancient samples from Mesolithic to Iron Age France.	2023-07-11	58
+2020_Burger_GermanyTollense	0.3.0	True	2.7.1	Low Prevalence of Lactase Persistence in Bronze Age Europe Indicates Ongoing Strong Selection over the Last 3,000 Years. Originally AADR v44.3.	2023-07-04	19
+2020_Cassidy_IrishDynastic	2.2.1	True	2.7.1	Neolithic samples from Ireland.	2023-07-11	42
+2020_Coutinho_Neolithic	0.3.0	False	2.7.1	The Neolithic Pitted Ware culture foragers were culturally but not genetically influenced by the Battle Axe culture. Originally AADR v44.3.	2023-07-04	34
+2020_Coutinho_Neolithic	0.3.1	True	2.7.1	The Neolithic Pitted Ware culture foragers were culturally but not genetically influenced by the Battle Axe culture. Originally AADR v44.3.	2024-05-06	34
+2020_Fernandes_Caribbean	2.2.0	True	2.7.1	Diachronic collection of samples from the pre-contact Caribbean. Originally AADR v44.3.	2023-07-04	174
+2020_Fernandes_westernMediterranean	2.2.0	True	2.7.1	Neolithic and Bronze Age samples from islands of the western Mediterranean, including Sardinia and Sicily. Originally AADR v44.3.	2023-07-04	62
+2020_Furtwaengler_Switzerland	2.2.0	True	2.7.1	Late Neolithic samples from Switzerland.	2023-07-04	96
+2020_Gokhman_MethylationMap	0.2.0	True	2.5.0	Differential DNA methylation of vocal and facial anatomy genes in modern humans. Originally AADR v44.3.	2023-07-04	2
+2020_Haber_NearEast	2.1.0	True	2.5.0	Iron Age to Medieval samples from the Near East. Originally AADR v44.3.	2023-07-04	19
+2020_Immel_Moldova	2.1.0	True	2.5.0	Late Neolithic samples from Moldova. Originally AADR v44.3.	2023-07-04	3
+2020_Jeong_EurasiaEasternSteppe	1.2.0	False	2.7.1	A Dynamic 6,000-Year Genetic History of Eurasia’s Eastern Steppe. Originally AADR v44.3.	2023-07-04	194
+2020_Jeong_EurasiaEasternSteppe	1.2.1	True	2.7.1	A Dynamic 6,000-Year Genetic History of Eurasia’s Eastern Steppe. Originally AADR v44.3.	2024-05-06	194
+2020_Linderholm_Poland	2.2.0	True	2.7.1	Final Eneolithic samples from Poland. Originally AADR v44.3.	2023-07-04	19
+2020_Lipson_WestAfrica	2.2.0	True	2.7.1	Ancient samples from Cameroon. Originally AADR v44.3.	2023-07-04	7
+2020_Mafessoni_Neanderthal	0.2.0	True	2.5.0	A high-coverage Neandertal genome from Chagyrskaya Cave. Originally AADR v44.3.	2023-07-04	1
+2020_Marcus_Sardinia	2.2.0	True	2.7.1	Samples from Sardinia covering a time span from the Middle Neolithic to the Medieval period. Originally AADR v44.3.	2023-07-04	70
+2020_Margaryan_Viking	2.2.0	True	2.7.1	Viking age samples from Europe and Greenland. Originally AADR v44.3.	2023-07-04	442
+2020_Massilani_EastAsia	0.3.0	True	2.7.1	Denisovan ancestry and population history of early East Asians. Originally AADR v44.3.	2023-07-04	1
+2020_Nagele_Caribbean	2.2.0	True	2.7.1	A diachronic set of ancient samples from the Caribbean. Originally AADR v44.3.	2023-07-04	93
+2020_Nakatsuka_Andes	2.3.0	True	2.7.1	Transect of ancient samples from the Andes covering 10000 years. Originally AADR v42.4.	2023-07-11	61
+2020_Nakatsuka_SouthPatagonia	4.3.0	True	2.7.1	Ancient samples from South Patagonia. Originally AADR v42.4.	2023-07-11	20
+2020_NievesColon_PuertoRico	2.2.0	True	2.7.1	Pre-contact samples from Puerto Rico. Originally AADR v44.3.	2023-07-04	2
+2020_Ning_China	2.2.0	True	2.7.1	A transect of ancient samples from northern China. Originally AADR v44.3.	2023-07-04	55
+2020_Rivollat_FranceGermany	2.2.0	True	2.7.1	Mesolithic and Neolithic samples from France and Germany.	2023-07-04	101
+2020_Skourtanioti_NearEast	2.1.0	True	2.5.0	Late Neolithic to Late Bronze Age samples from the Near East.	2023-07-04	110
+2020_Stoneking_Pacific	0.3.0	True	2.7.1	Ancient DNA from Guam and the peopling of the Pacific. Originally AADR v44.3.	2023-07-04	2
+2020_TeschlerNicola_UpperPaleoTwin	2.2.0	True	2.7.1	Samples from two Upper Palaeolithic infants from Austria. Originally AADR v44.3.	2023-07-04	3
+2020_Wang_subSaharanAfrica	2.2.0	True	2.7.1	Ancient samples from sub-Saharan Africa.	2023-07-04	20
+2020_Yang_China	2.1.1	True	2.5.0	Diachronic ancient data from China.	2023-07-11	24
+2020_Yu_NorthRussia	2.2.0	True	2.7.1	Upper Palaeolithic to Early Bronze Age samples from the Lake Baikal region in Siberia.	2023-07-04	19
+2021_Bortolini_Glacial	0.2.0	True	2.5.0	Early Alpine occupation backdates westward human migration in Late Glacial Europe. Originally AADR v50.	2023-07-04	1
+2021_Capodiferro_Colombia	0.3.0	False	2.7.1	Archaeogenomic distinctiveness of the Isthmo-Colombian area. Originally AADR v50.	2023-07-04	16
+2021_Capodiferro_Colombia	0.3.1	True	2.7.1	Archaeogenomic distinctiveness of the Isthmo-Colombian area. Originally AADR v50.	2024-05-06	16
+2021_CarlhoffNature	2.2.0	True	2.7.1	Genome of a Middle Holocene hunter-gatherer from Wallacea.	2023-07-04	1
+2021_Clemente_Aegean	0.3.0	True	2.7.1	The genomic history of the Aegean palatial civilizations. Originally AADR v50.	2023-07-04	6
+2021_Egfjord_Denmark	0.3.0	False	2.7.1	Genomic Steppe ancestry in skeletons from the Neolithic Single Grave Culture in Denmark. Originally AADR v50.	2023-07-04	3
+2021_Egfjord_Denmark	0.3.1	True	2.7.1	Genomic Steppe ancestry in skeletons from the Neolithic Single Grave Culture in Denmark. Originally AADR v50.	2024-05-06	3
+2021_Freilich_Croatia	1.2.0	True	2.7.1	1240K pulldown of whole genome shotgun data from 28 genomes from eastern Croatia.	2023-07-04	28
+2021_GnecchiRuscone_KazakhSteppe	2.2.0	True	2.7.1	Published (March 26th 2021) 1240K capture data from Central steppe Iron Age project.	2023-07-04	117
+2021_Harney_Teeth	0.2.0	True	2.5.0	A minimally destructive protocol for DNA extraction from ancient teeth. Originally AADR v50.	2023-07-04	16
+2021_Kilinc_northeastAsia	2.2.0	False	2.7.1	Ancient samples from Northeast Asia.	2023-07-04	40
+2021_Kilinc_northeastAsia	3.0.0	False	2.7.1	Ancient samples from Northeast Asia.	2024-02-21	40
+2021_Kilinc_northeastAsia	3.1.0	True	2.7.1	Ancient samples from Northeast Asia.	2024-07-15	40
+2021_Larena_Philippines	0.3.0	True	2.7.1	Multiple migrations to the Philippines during the last 50,000 years. Originally AADR v50.	2023-07-04	2
+2021_Mao_EastAsia	0.2.0	True	2.5.0	The deep population history of northern East Asia from the Late Pleistocene to the Holocene. Originally AADR v50.	2023-07-04	25
+2021_Novak_Croatia	0.3.0	True	2.7.1	Genome-wide analysis of nearly all the victims of a 6200 year old massacre. Originally AADR v50.	2023-07-04	38
+2021_Papac_CentralEurope	1.2.0	True	2.7.1	Dynamic changes in genomic and social structures in third millennium BCE central Europe. Originally AADR v50.	2023-07-04	283
+2021_PattersonNature	0.4.0	False	2.7.1	Large-scale migration into Britain during the Middle to Late Bronze Age.	2023-07-04	826
+2021_PattersonNature	0.4.1	True	2.7.1	Large-scale migration into Britain during the Middle to Late Bronze Age.	2023-11-07	826
+2021_Posth_Etruscans	1.0.0	True	2.7.1	Package describing data in Posth et al. 2021 on Iron Age Italian samples from Etruscan and other contexts. Genotype data provided by authors.	2024-10-11	83
+2021_Saag_EastEuropean	3.2.0	True	2.7.1	Genetic ancestry changes in Stone to Bronze Age transition in the East European plain.	2023-07-04	47
+2021_SaupeCurrBiol	0.2.0	True	2.5.0	Ancient genomes reveal structural shifts after the arrival of Steppe-related ancestry in the Italian Peninsula.	2023-07-04	22
+2021_SeguinOrlando_Neolithic	0.3.0	True	2.7.1	Heterogeneous Hunter-Gatherer and Steppe-Related Ancestries in Late Neolithic and Bell Beaker Genomes from Present-Day France. Originally AADR v50.	2023-07-04	25
+2021_Svensson_PreGlacial	0.3.0	True	2.7.1	Genome of Peştera Muierii skull shows high diversity and low mutational load in pre-glacial Europe. Originally AADR v50.	2023-07-04	2
+2021_Wang_EastAsia	3.2.0	False	2.7.1	Diachronic ancient and modern data from East Asia.	2023-07-04	574
+2021_Wang_EastAsia	4.0.0	True	2.7.1	Diachronic ancient and modern data from East Asia.	2024-03-15	574
+2021_Yaka_Anatolia	0.2.0	False	2.5.0	Variable kinship patterns in Neolithic Anatolia revealed by ancient genomes. Originally AADR v50.	2023-07-04	21
+2021_Yaka_Anatolia	0.2.1	True	2.7.0	Variable kinship patterns in Neolithic Anatolia revealed by ancient genomes. Originally AADR v50.	2023-07-19	21
+2021_Zegarac_SoutheasternEurope	1.2.0	True	2.7.1	This article provides provide insights into family structure and the heredity of social status in the early Bronze Age of southeastern Europe. Originally AADR v50.	2023-07-04	24
+2022_Altinisik_UpperMesopotamia	1.0.0	True	2.7.1	13 ancient genomes from Neolithic Mesopotamia	2024-05-17	13
+2022_GnecchiRuscone_CarpathianBasin	1.0.0	False	2.7.1	Ancient genomes reveal origin and rapid trans-Eurasian migration of 7th century Avar elites.	2023-10-23	66
+2022_GnecchiRuscone_CarpathianBasin	1.0.1	True	2.7.1	Ancient genomes reveal origin and rapid trans-Eurasian migration of 7th century Avar elites.	2024-04-11	66
+2022_Gretzinger_AngloSaxons	1.0.0	False	2.7.1	This article provides provide insights about the Anglo-Saxon migration and the formation of the early English gene pool	2023-10-04	487
+2022_Gretzinger_AngloSaxons	1.1.0	False	2.7.1	This article provides provide insights about the Anglo-Saxon migration and the formation of the early English gene pool	2024-03-07	487
+2022_Gretzinger_AngloSaxons	1.2.0	True	2.7.1	This article provides provide insights about the Anglo-Saxon migration and the formation of the early English gene pool	2024-07-15	487
+2022_Yu_VanDeLoosdrecht_Sicily	1.0.0	True	2.7.1	Genotypes of ancient individuals from Grotta dell'Uzzo, excluding SNP sites on CpG islands	2023-11-23	20
+2023_Carlhoff_Thailand	1.0.0	False	2.7.1	Genomic portrait and relatedness patterns of the Iron Age Log Coffin culture in northwestern Thailand	2024-06-19	33
+2023_Carlhoff_Thailand	1.1.0	True	2.7.1	Genomic portrait and relatedness patterns of the Iron Age Log Coffin culture in northwestern Thailand	2024-07-15	33
+2023_Koptekin_SouthwestAsia	1.0.0	False	2.7.1	Spatial and temporal heterogeneity in human mobility patterns in Holocene Southwest Asia and the East Mediterranean	2024-06-06	35
+2023_Koptekin_SouthwestAsia	1.1.0	True	2.7.1	Spatial and temporal heterogeneity in human mobility patterns in Holocene Southwest Asia and the East Mediterranean	2024-07-15	35
+2023_Peltola_VolgaOka	1.0.0	False	2.7.1	Genetic admixture and language shift in the medieval Volga-Oka interfluve	2022-12-15	31
+2023_Peltola_VolgaOka	1.1.0	True	2.7.1	Genetic admixture and language shift in the medieval Volga-Oka interfluve	2024-03-12	31
+2023_Penske_EarlyContact	1.0.0	True	2.7.1	Early contact between late farming and pastoralist societies in southeastern Europe	2023-11-14	130
+2024_Allentoft_PostGlacial_WestEurasia	1.0.0	True	2.7.1	1240k pull-doen of imputed and pseudohaploid genotypes from Population genomics of post-glacial western Eurasia.	2024-08-15	631
+2024_Ghalichi_Caucasus	1.0.0	True	2.7.1	The rise and transformation of Bronze Age pastoralists in the Caucasus	2024-10-11	131
+2024_GnecchiRuscone_CarpathianBasinAvarPedigrees	1.0.0	False	2.7.1	Data from large pedigrees from several Avar-period sites in the Carpathian basin	2024-02-21	440
+2024_GnecchiRuscone_CarpathianBasinAvarPedigrees	1.0.1	True	2.7.1	Data from large pedigrees from several Avar-period sites in the Carpathian basin	2024-05-02	440
+2024_Gretzinger_EarlyCelts	1.0.0	False	2.7.1	Early Celtic individuals from Southwestern Germany, around 500 BC.	2024-06-03	35
+2024_Gretzinger_EarlyCelts	1.1.0	True	2.7.1	Early Celtic individuals from Southwestern Germany, around 500 BC.	2024-07-15	35
+2024_Wang_ViennaBasinAvarPeriod	1.0.0	True	2.7.1	Data from Avar and pre-Avar period samples from the Viennese basin	2024-04-22	749
+Archaic_Humans	2.2.0	True	2.5.0	Genetic data of various archaic humans. Originally AADR v42.4.	2023-07-11	12
+Reference_Genomes	2.2.0	True	2.5.0	Modern human and non-human reference genomes. Originally AADR v42.4.	2023-07-11	4
