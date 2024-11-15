@@ -1,0 +1,123 @@
+---
+title: "figure1"
+format: html
+editor: visual
+---
+
+## Required Libraries
+
+::: callout-note
+All bash commands assumed executed from the root of this repository
+:::
+
+This notebook uses the following software and versions to pull data:
+
+-   miniforge v24.7.1
+-   amdirt=1.6.2
+-   posieidon-xerxes=1.5.7.0
+-   poseidon-trident=1.0.1.1
+
+This can be recreated with
+
+<!--
+TODO: make a lock file?
+-->
+
+```{bash, eval=F}
+conda env create -f figure1/environment.yaml
+conda activate bergstrom2024
+```
+
+For data preparation and plotting
+
+And the following libraries, and versions
+
+```{r}
+library(tidyverse)
+library(ggsci)
+sessionInfo()
+```
+
+## Getting Raw Data
+
+This plot will initially show number of ancient metagenomes from host-associated contexts, ancient microbial genomes, and ancient human genome/genome-wide data.
+
+Ancient environmental metagenomes are excluded as I believe AncientMetagenomeDir has a gross under-estimate of these, and I'm not sure if there is another authoritative source for this type of data.
+
+For the (currently) three data types, we will just retrieve the number of samples as library information is not consistently recorded for human genome/genome-wide data.
+
+### Ancient Host-Associated Metagenomes
+
+Download latest ancient host-assocuated metagenome data from AncientMetagenomeDir using AMDirT,
+
+```{bash, eval=F}
+AMDirT download -t ancientsinglegenome-hostassociated -y samples -r v24.09.0 -o figure1/
+# mv ancientmetagenome-hostassociated_samples_v24.09.0.tsv figure1/ -> apparently `-o` ignored?
+```
+
+Parse the file to extract just date and sample information; calculating cumulative sum in each year.
+
+```{r}
+data_raw_ancientmetagenome <- read_tsv('ancientmetagenome-hostassociated_samples_v24.09.0.tsv')
+
+data_subset_ancientmetagenome <- data_raw_ancientmetagenome |> 
+  select(publication_year) |> 
+  group_by(publication_year) |> 
+  summarise(
+    n_samples_per = n(),
+    sample_type = 'Ancient host-associated metagenome'
+    ) |> 
+  mutate(n_samples_cumul = cumsum(n_samples_per))
+```
+
+### Ancient Microbial Genomes
+
+Download latest ancient host-associated singleagenome data from AncientMetagenomeDir using AMDirT
+
+```{bash, eval=F}
+AMDirT download -t ancientsinglegenome-hostassociated -y samples -r v24.09.0 -o figure1/
+# mv ancientsinglegenome-hostassociated_samples_v24.09.0.tsv figure1/ -> apparently `-o` ignored?
+```
+
+Parse the file to extract just date and sample information; calculating cumulative sum in each year.
+
+```{r}
+data_raw_ancientsinglegenome <- read_tsv('ancientsinglegenome-hostassociated_samples_v24.09.0.tsv')
+
+data_subset_ancientsinglegenome <- data_raw_ancientsinglegenome |> 
+  select(publication_year) |> 
+  group_by(publication_year) |> 
+  summarise(
+    n_samples_per = n(),
+    sample_type = 'Ancient microbial genome'
+    ) |> 
+  mutate(n_samples_cumul = cumsum(n_samples_per))
+```
+
+### Ancient Human Genomes
+
+### Combine Data
+
+```{r}
+data_subset_combined <- data_subset_ancientmetagenome |>
+  bind_rows(data_subset_ancientsinglegenome) |> 
+  arrange(publication_year)
+
+data_year_range = seq(
+  min(data_subset_combined$publication_year), 
+  max(data_subset_combined$publication_year)
+)
+
+ggplot(data_subset_combined, aes(publication_year, n_samples_cumul, fill = sample_type)) +
+  geom_col() +
+  scale_fill_npg() +
+  theme_classic() +
+  theme(
+    axis.line.y = element_blank(),
+    legend.position = "top"
+  ) +
+  xlab('') +
+  ylab('Number of samples with sequencing data') + 
+  guides(fill = guide_legend(title = ""))
+```
+

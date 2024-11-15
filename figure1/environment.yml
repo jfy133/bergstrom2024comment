@@ -1,0 +1,8 @@
+name: bergstrom2024
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - amdirt=1.6.2
+  - posieidon-xerxes=1.5.7.0
+  - poseidon-trident=1.0.1.1
