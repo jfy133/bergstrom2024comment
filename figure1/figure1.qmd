@@ -48,7 +48,7 @@ For the (currently) three data types, we will just retrieve the number of sample
 
 ### Ancient Host-Associated Metagenomes
 
-Download latest ancient host-assocuated metagenome data from AncientMetagenomeDir using AMDirT,
+Download latest ancient host-associated metagenome data from AncientMetagenomeDir using AMDirT,
 
 ```{bash, eval=F}
 AMDirT download -t ancientsinglegenome-hostassociated -y samples -r v24.09.0 -o figure1/
@@ -82,7 +82,7 @@ AMDirT download -t ancientsinglegenome-hostassociated -y samples -r v24.09.0 -o 
 Parse the file to extract just date and sample information; calculating cumulative sum in each year.
 
 ```{r}
-data_raw_ancientsinglegenome <- read_tsv('ancientsinglegenome-hostassociated_samples_v24.09.0.tsv')
+data_raw_ancientmicrobegenome <- read_tsv('ancientsinglegenome-hostassociated_samples_v24.09.0.tsv')
 
 data_subset_ancientsinglegenome <- data_raw_ancientsinglegenome |> 
   select(publication_year) |> 
@@ -102,27 +102,142 @@ Pull summary statistics with Poseidon's trident
 trident list --packages --remote --raw > figure1/ancienthumangenomewidedata.tsv
 ```
 
-Filter to latest data, remove modern human data
+We couldn't do that because it isn't yet propogated with latest statistics.
+
+We have to fall back to the AADR table and do alot of manual clean up.
+
+Download from the AADR dataverse repo
+
+```{bash, eval=F}
+wget -O figure1/v62.0_1240k_public.anno https://dataverse.harvard.edu/api/access/datafile/10537413
+```
+
+
+First we remove modern human data, then we have perform a unique on the master ID,
+which is the closest to a sample/individual identifier.
+This is despite AADR themselves reporting 13571 unique individuals, I identified that there are many duplicate Master ID entries that seem to be derived from different library types (e.g. KPT002)
 
 ```{r}
-data_raw_ancienthuman <- read_tsv('ancienthumangenomewidedata.tsv')
+data_raw_ancienthuman <- read_tsv('v62.0_1240k_public.anno')
+
+data_subset_ancienthuman <- data_raw_ancienthuman |> 
+  rename(
+    id = `Master ID`, 
+    publication_year = `Year data from this individual was first published [for a present-day individuals we give the data of the data reported here; missing GreenScience 2010 (Vi33.15, Vi33.26), Olalde2018 (I2657), RasmussenNature2010 (Australian)]`, 
+    age = `Date mean in BP in years before 1950 CE [OxCal mu for a direct radiocarbon date, and average of range for a contextual date]`
+  ) |> 
+  select(
+    id, publication_year, age
+    ) |> 
+  filter(age > 0) |> 
+  unique() |> 
+  select(id, publication_year) |> 
+  group_by(publication_year) |> 
+  summarise(
+    n_samples_per = n(),
+    sample_type = 'Ancient human individuals'
+    ) |> 
+  mutate(
+    publication_year = as.numeric(publication_year),
+    n_samples_cumul = cumsum(n_samples_per)
+    )
+```
+
+## Non-human genomes
+
+We also include non-human eukaryote genomes - namely plants and animals.
+
+This comes from Bergström (pers. comm.).
+
+```{r}
+data_raw_ancientnonhuman <- read_tsv('nonhuman-published-genomes-AB151124.tsv')
+
+## Not sure why by summarize plus cumsum wasn't working properly as above
+## therefore went for a more convoluted strategy
+data_subset_animal <- data_raw_ancientnonhuman |>
+  filter(kingdom == 'Animal',
+         year < 2025) |>
+  select(year, nr_genomes) |>
+  group_by(year) |>
+  mutate(n_samples_per = sum(nr_genomes)) |>
+  select(year, n_samples_per) |>
+  unique() |>
+  rename(publication_year = year, ) |>
+  ungroup() |>
+  select(publication_year, n_samples_per) |>
+  arrange(publication_year) |>
+  mutate(n_samples_cumul = cumsum(n_samples_per),
+         sample_type = 'Ancient animal genome')
+
+data_subset_plant <- data_raw_ancientnonhuman |>
+  filter(kingdom == 'Plant',
+         year < 2025) |>
+  select(year, nr_genomes) |>
+  group_by(year) |>
+  mutate(n_samples_per = sum(nr_genomes)) |>
+  select(year, n_samples_per) |>
+  unique() |>
+  rename(publication_year = year, ) |>
+  ungroup() |>
+  select(publication_year, n_samples_per) |>
+  arrange(publication_year) |>
+  mutate(n_samples_cumul = cumsum(n_samples_per),
+         sample_type = 'Ancient plant genome')
+
+data_subset_fungi <- data_raw_ancientnonhuman |>
+  filter(kingdom == 'Fungi',
+         year < 2025) |>
+  select(year, nr_genomes) |>
+  group_by(year) |>
+  mutate(n_samples_per = sum(nr_genomes)) |>
+  select(year, n_samples_per) |>
+  unique() |>
+  rename(publication_year = year, ) |>
+  ungroup() |>
+  select(publication_year, n_samples_per) |>
+  arrange(publication_year) |>
+  mutate(n_samples_cumul = cumsum(n_samples_per),
+         sample_type = 'Ancient fungi genome')
+
 ```
 
 ### Combine Data
 
+Combine the different datasets, and get some basic additional information for better plotting readability.
+
 ```{r}
 data_subset_combined <- data_subset_ancientmetagenome |>
-  bind_rows(data_subset_ancientsinglegenome) |> 
+  bind_rows(
+    list(
+      data_subset_ancienthuman,
+      data_subset_ancientsinglegenome,
+      data_subset_animal,
+      data_subset_plant,
+      data_subset_fungi
+    )
+  ) |>
   arrange(publication_year)
 
 data_year_range = seq(
-  min(data_subset_combined$publication_year), 
-  max(data_subset_combined$publication_year)
+  min(data_subset_combined$publication_year),
+  max(data_subset_combined$publication_year),
 )
 
-ggplot(data_subset_combined, aes(publication_year, n_samples_cumul, fill = sample_type)) +
+data_type_order <- data_subset_combined |>
+  select(sample_type, n_samples_cumul) |> 
+  group_by(sample_type) |> 
+  summarise(current = max(n_samples_cumul)) |> 
+  arrange(current) |> 
+  mutate(sample_type = as_factor(sample_type)) |> 
+  pull(sample_type)
+```
+
+Plot a stacked bar plot
+
+```{r}
+ggplot(data_subset_combined |> mutate(sample_type = factor(sample_type, levels = data_type_order)), aes(publication_year, n_samples_cumul, fill = sample_type)) +
   geom_col() +
-  scale_fill_npg() +
+  scale_fill_npg(breaks = data_type_order) +
   theme_classic() +
   theme(
     axis.line.y = element_blank(),
