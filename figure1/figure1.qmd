@@ -235,16 +235,20 @@ data_type_order <- data_subset_combined |>
 Plot a stacked bar plot
 
 ```{r}
-ggplot(data_subset_combined |> mutate(sample_type = factor(sample_type, levels = data_type_order)), aes(publication_year, n_samples_cumul, fill = sample_type)) +
+plot_final <- ggplot(data_subset_combined |> mutate(sample_type = factor(sample_type, levels = data_type_order)), aes(publication_year, n_samples_cumul, fill = sample_type)) +
   geom_col() +
   scale_fill_npg(breaks = data_type_order) +
   theme_classic() +
   theme(
     axis.line.y = element_blank(),
-    legend.position = "top"
+    legend.position = "top",
+    panel.grid.major.y = element_line(colour = "black", size = 0.5, linetype = 'dotted'),
+    text = element_text(family = "Albert Sans")
   ) +
   xlab('') +
   ylab('Number of samples with sequencing data') + 
   guides(fill = guide_legend(title = ""))
+
+ggsave(plot_final, filename = 'figure1.png', device = png, dpi = 300, width = 2200, height = 1250, units = 'px')
 ```
 
