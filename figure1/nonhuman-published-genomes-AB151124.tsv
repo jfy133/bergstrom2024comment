@@ -1,0 +1,126 @@
+publication	year	species	kingdom	data_type	nr_genomes	region	period	coverage	description	paper_link
+Przelomska et al.	2024	Atlantic sturgeon	Animal	capture	14	North America	Historical	Very low	"we scanned the archaeological samples for this variant set, recovering up to 503 sites in the 14 archaeological samples"	https://royalsocietypublishing.org/doi/full/10.1098/rspb.2024.1145
+Mathieson et al.	2020	Baboon	Animal	WGS	1	South Africa	Holocene	0.9x		https://academic.oup.com/gbe/article/12/4/407/5727765
+Mascher et al.	2016	Barley	Plant	WGS	5	Levant	Neolithic	0.5-20x		https://www.nature.com/articles/ng.3611
+Skovrind et al.	2024	Beluga	Animal	WGS	45	Northern Canada	Historical	0.01-4x		https://www.biorxiv.org/content/10.1101/2024.03.22.586343v1.full
+Soubrier et al. 	2016	Bison	Animal	Capture	13	Europe	Pleistocene, historical	Capture	10k SNP capture	https://www.nature.com/articles/ncomms13158
+Yu et al.	2022	Black rat	Animal	WGS	36	Europe	Roman and later	0.2-16x		https://www.nature.com/articles/s41467-022-30009-z
+Hempel et al.	2022	Blue antelope	Animal	WGS	2	South Africa	Holocene	3x, 2x	Extinct blue antelope	https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msac241/6794086
+Louis et al.	2023	Bottlenose dolphin	Animal	WGS	1	North Atlantic	Holocene	3x		https://www.nature.com/articles/s41467-023-39532-z
+Westbury et al.	2024	Bowhead whales	Animal	WGS	202	Canada, Svalbard	Holocene	0.0001-0.4x	Some very low coverage	https://www.biorxiv.org/content/10.1101/2024.04.10.588858v1
+Segawa et al.	2023	Brown bear	Animal	WGS	2	Japan, Siberia	Late Pleistocene	0.1-0.3x		https://www.biorxiv.org/content/10.1101/2023.02.08.527755v1
+Barlow et al.	2018	Brown bear	Animal	WGS	1	Europe	Late Pleistocene	2x		https://www.nature.com/articles/s41559-018-0654-8
+Cahill et al.	2018	Brown bear	Animal	WGS	11	Ireland, Quebec	Pleistocene & Holocene	0.007-0.1x		https://academic.oup.com/mbe/article/35/5/1120/4844088#115998727
+Maixner et al. 	2021	Budding yeast	Fungi	WGS	1	Austria	Bronze Age	?	Metagenomic fecal sample	https://www.sciencedirect.com/science/article/pii/S0960982221012719
+Heintzman et al.	2015	Camel	Animal	WGS	3	North America	Pleistocene	~0.1x	∼125 to 75 ka	https://academic.oup.com/mbe/article/32/9/2433/1031371
+Jamieson et al.	2023	Cat	Animal	WGS	14	Europe	Holocene	0.1-5x	Includes Mesolithic Scotland cat	https://www.cell.com/current-biology/fulltext/S0960-9822(23)01073-4
+Rossi et al.	2024	Cattle	Animal	WGS	8	Central Asia	Holocene	0.44–2.43x, mean 1.17x	Domestic cattle in aurochs study	https://www.nature.com/articles/s41586-024-08112-6
+Ginja et al.	2023	Cattle	Animal	WGS	4	North Africa	Iron Age	0.01-0.1x	Another 8 with very even lower coverage	https://www.cell.com/iscience/fulltext/S2589-0042(23)01273-7
+Chen et al.	2023	Cattle	Animal	WGS	4	Tibet	Holocene	0.01-1.7x		https://www.science.org/doi/full/10.1126/sciadv.adi6857
+Verdugo et al.	2019	Cattle	Animal	WGS	67	Near East	Wide range	0.001-14x, median 0.9x		https://science.sciencemag.org/content/365/6449/173.full
+Chen et al.	2018	Cattle	Animal	WGS	8	China	Neolithic	0.01-2.6x	Neolithic northern China	https://www.nature.com/articles/s41467-018-04737-0
+Rossi et al.	2024	Cattle (Aurochs)	Animal	WGS	33	Eurasia	Late Pleistocene & Holocene	0.06–22.47x, mean 3.9x	Wild aurochs genomes	https://www.nature.com/articles/s41586-024-08112-6
+Erven et al.	2024	Cattle (Aurochs)	Anmal	WGS	2	Germany/Netherlands	Mesolithic/Medieval	18x		https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msae076/7658373
+Günther et al.	2023	Cattle (Aurochs)	Animal	WGS	24	Iberia	Holocene	0.01-4x	Both wild and domestic	https://www.biorxiv.org/content/10.1101/2023.07.19.548914v1
+Park et al.	2017	Cattle (Aurochs)	Animal	WGS	1	UK	Holocene	6x	6.7ky-old British aurochs	https://genomebiology.biomedcentral.com/articles/10.1186/s13059-015-0790-2
+Barlow et al.	2021	Cave bear	Animal	WGS	4	Europe, Caucasus	Pleistocene	~0.5-3x		https://www.sciencedirect.com/science/article/abs/pii/S096098222100138X?dgcid=author
+Barlow et al.	2018	Cave bear	Animal	WGS	4	Europe	Late Pleistocene	2-4x		https://www.nature.com/articles/s41559-018-0654-8
+Martínez-García et al.	2024	Cod	Animal	WGS	35	Norway	Medieval	0.001-4x		https://www.biorxiv.org/content/10.1101/2024.01.25.577044v1
+Martínez-García et al.	2022	Cod	Animal	WGS	37	Europe	Medieval	0.001-0.1x	Very low coverage data	https://royalsocietypublishing.org/doi/full/10.1098/rspb.2022.1107?
+Star et al.	2017	Cod	Animal	WGS	15	Germany	Viking age	1-3x	Viking cod bones in Germany	https://www.pnas.org/content/early/2017/08/01/1710186114
+Trucchi et al.	2021	Common bean	Plant	WGS	15	Argentina	Holocene	4-18x		https://www.nature.com/articles/s41477-021-00848-7
+Palmer et al.	2012	Cotton	Plant	WGS	4	Various	Holocene	?		https://academic.oup.com/mbe/article/29/8/2031/1043502
+Bergström et al.	2022	Dhole	Animal	WGS	1	Caucasus	Pleistocene	~1x		https://www.nature.com/articles/s41586-022-04824-9
+Ciucani et al.	2021	Dhole	Animal	WGS	1	Sardinia	Late Pleistocene	>4x	Extinct Sardinian dhole	https://www.sciencedirect.com/science/article/pii/S0960982221013154?
+Perri et al.	2021	Dire wolf	Animal	WGS+capture	5	North America	Pleistocene	0.01-0.23x		https://www.nature.com/articles/s41586-020-03082-x
+Souilmi et al.	2024	Dog	Animal	WGS	9	Australia	Holocene	0.1-17x	Dingo	https://www.pnas.org/doi/10.1073/pnas.2407584121
+Lin et al.	2023	Dog	Animal	WGS	4	North America	Holocene	0.05-10x	Includes increased coverage for Port au Choix dog, previously published by Leathlobhair et al. 2018	https://www.science.org/doi/10.1126/science.adi6549
+Feuerborn et al.	2021	Dog	Animal	WGS	20	Northern Eurasia	Various	0.1-11x		https://www.pnas.org/content/118/39/e2100338118
+Sinding et al.	2020	Dog	Animal	WGS	1	Siberia	Holocene	10x	Zhokhov dog	https://science.sciencemag.org/content/368/6498/1495?rss=1
+Bergström et al.	2020	Dog	Animal	WGS	27	Eurasia	Wide range	0.1-10x, median 1x		https://science.sciencemag.org/content/370/6516/557
+Leathlobhair et al.	2018	Dog	Animal	WGS	2	North America	Holocene	~1x	Pre-Columbian dogs	https://science.sciencemag.org/content/361/6397/81
+Botigué et al. 	2017	Dog	Animal	WGS	2	Germany	Neolithic	~10x	Two German Neolithic dogs	https://www.nature.com/articles/ncomms16082
+Frantz et al.	2016	Dog	Animal	WGS	1	Ireland	Neolithic	30x	Neolithic dog	https://science.sciencemag.org/content/352/6290/1228?rss=1
+Taylor et al.	2023	Donkey	Animal	WGS	1	Mexico	Historical	1x	"plus one donkey genome, 1.32×"	https://www.science.org/doi/10.1126/science.adc9691
+Todd et al.	2022	Donkey	Animal	WGS	31	West Eurasia	Holocene	0.7-5x		https://www.science.org/doi/10.1126/science.abo3503
+Scott et al.	2022	Elkhorn coral	Animal	WGS	4	Florida Keys	Holocene	<0.01x ??		https://onlinelibrary.wiley.com/doi/full/10.1111/mec.16642
+Chen et al.	2020	Gaur	Animal	WGS	10	China	Neolithic	0.03-2x		https://www.pnas.org/content/117/45/28150
+Daly et al.	2022	Goat	Animal	WGS	1	Turkey	Pleistocene	2.5x		https://elifesciences.org/articles/82984
+Daly et al.	2022	Goat	Animal	WGS	14	Caucasus	pre-Neolithic and later		New lineage of Capra	https://www.biorxiv.org/content/10.1101/2022.04.08.487619v3
+Daly et al.	2021	Goat	Animal	WGS	14	Zagros	Early Neolithic	0.1-3x	Very early domestics	https://www.pnas.org/doi/10.1073/pnas.2100901118
+Cai et al.	2020	Goat	Animal	WGS	27	China	Neolithic-Iron Age	0.01-13x		https://academic.oup.com/mbe/article/37/7/2099/5824306
+Daly et al.	2018	Goat	Animal	WGS	51	Near East, Central Asia	Wide range	0.01-15x, median 1x	Mostly Neolithic-Iron Age	https://science.sciencemag.org/content/361/6397/85.abstract
+Rodrigues Soares	2022	Goitered gazelle	Animal	WGS	1	Uzbekistan	Holocene	<0.001x ?		https://royalsocietypublishing.org/doi/10.1098/rsos.220104
+Ramos-Madrigal et al.	2019	Grapevine	Plant	Capture	28	France	Iron Age - Medieval	1-25x	10k SNP capture	https://pubmed.ncbi.nlm.nih.gov/31182840/
+Wales et al.	2016	Grapevine	Plant	Capture	7	Various	Holocene	Low	Unclear, but seems shotgun rather than capture	https://www.sciencedirect.com/science/article/abs/pii/S0305440316300772?
+Atmore et al.	2024	Herring	Animal	WGS	32	Europe	Medieval	0.0001-23x		https://www.biorxiv.org/content/10.1101/2024.07.11.603078v1
+Atmore et al.	2022	Herring	Animal	WGS	40	Baltic Sea	750-1600 CE	0.002-2.5x		https://www.biorxiv.org/content/10.1101/2022.05.18.492457v1
+Librado et al.	2024	Horse	Animal	WGS	124	Eurasia	Pleistocene & Holocene	0.3-11x		https://www.nature.com/articles/s41586-024-07597-5
+Taylor et al.	2023	Horse	Animal	WGS	32	Americas, plus Eurasia	Historical, plus Holocene	0.01-30x	"characterized a total of 27 genetically, along with six new specimens from Eurasia"	https://www.science.org/doi/10.1126/science.adc9691
+Vershinina et al.	2021	Horse	Animal	WGS	2	Yukon	Late Pleistocene	25x		https://onlinelibrary.wiley.com/doi/10.1111/mec.15977
+Librado et al.	2021	Horse	Animal	WGS	264	Eurasia	Pleistocene & Holocene	0.1-25x		https://www.nature.com/articles/s41586-021-04018-9
+Fages et al.	2019	Horse	Animal	WGS	87	Eurasia	Last 6ky	1-9x, median 3x		https://www.sciencedirect.com/science/article/pii/S0092867419303848
+Gaunitz et al.	2018	Horse	Animal	WGS	42	Eurasian steppe	Past 5ky	1-9x, median 3x		https://science.sciencemag.org/content/360/6384/111
+Librado et al.	2017	Horse	Animal	WGS	14	Eurasian steppe	Bronze-Iron Age	1-10x		https://science.sciencemag.org/content/356/6336/442.abstract
+Librado et al.	2015	Horse	Animal	WGS	2	Siberia	Holocene	20x	5kya and historical	https://www.pnas.org/content/112/50/E6889
+Der Sarkissian et al.	2015	Horse	Animal	WGS	5	Poland	Historical	1-5x	1878–1929 CE	https://www.cell.com/current-biology/pdf/S0960-9822(15)01003-9.pdf
+Schubert et al. 	2014	Horse	Animal	WGS	2	Siberia	Late Pleistocene	~1x	Taymyr, 42kya and 16kya	https://www.pnas.org/content/111/52/E5661
+Orlando et al.	2013	Horse	Animal	WGS	2	North America	Pleistocene	~1x	One ~700kya, one ~43 kya	https://www.nature.com/articles/nature12323
+Lucena-Perez et al.	2024	Lynx	Animal	WGS	3	Iberia	Holocene	2-4x		https://www.nature.com/articles/s41559-023-02267-7
+Lucena-Perez et al.	2022	Lynx	Animal	WGS	1	Iberia	Holocene	5x		https://www.sciencedirect.com/science/article/pii/S0277379122001494
+Kistler et al.	2020	Maize	Plant	WGS	3	Honduras	Holocene	?		https://www.pnas.org/content/117/52/33124
+Kistler et al.	2018	Maize	Plant	WGS	9	South America	Holocene	?		https://science.sciencemag.org/content/362/6420/1309.long
+Vallebueno-Estrada et al.	2017	Maize	Plant	WGS	2	Meixco	Holocene	~0.5x		https://www.pnas.org/content/113/49/14151.long
+Swarts et al.	2017	Maize	Plant	WGS	15	USA	Holocene	5-20x	All 1.9k BP	https://science.sciencemag.org/content/357/6350/512.long
+Ramos-Madrigal et al.	2016	Maize	Plant	WGS	1	Mexico	Holocene	1.7x		https://www.sciencedirect.com/science/article/pii/S0960982216311204
+Dehasque et al.	2024	Mammoth	Animal	WGS	13	Wrangel Island	Holocene	9-23x		https://www.cell.com/cell/fulltext/S0092-8674(24)00577-4
+Díez-del-Molino et al.	2023	Mammoth	Animal	WGS	17	Siberia	Pleistocene	2-30x	Includes increased coverage for Chukochya, previously published by van der Valk et al. 2021	https://www.cell.com/current-biology/fulltext/S0960-9822(23)00404-9
+van der Valk et al.	2022	Mammoth	Animal	WGS	2	Siberia	Late Pleistocene	14x both		https://www.sciencedirect.com/science/article/pii/S2589004222010987
+van der Valk et al.	2021	Mammoth	Animal	WGS	3	Siberia	Pleistocene	<1.5x		https://www.nature.com/articles/s41586-021-03224-9
+Palkopoulou et al. 	2018	Mammoth	Animal	WGS	5	Siberia, North America	Pleistocene	0.5x-6x		https://www.pnas.org/content/115/11/E2566
+Lynch et al.	2015	Mammoth	Animal	WGS	2	Siberia	Late Pleistocene	20x	60kya and 20kya	https://www.sciencedirect.com/science/article/pii/S2211124715006397
+Palkopoulou et al. 	2015	Mammoth	Animal	WGS	2	Siberia	Late Pleistocene	~15x	45kya and 4kya	https://www.cell.com/current-biology/pdf/S0960-9822(15)00420-0.pdf
+Palkopoulou et al. 	2018	Mastodon	Animal	WGS	2	North America	Pleistocene	1x, 4xz		https://www.pnas.org/content/115/11/E2566
+Pečnerová et al.	2023	Muskox	Animal	WGS	1	Siberia	Late Pleistocene	10x	21 kBP	https://onlinelibrary.wiley.com/doi/10.1111/mec.17205
+Wagner et al.	2018	Oak	Plant	WGS	140	Europe	Holocene	77 samples with >1x	More of a screening study	https://onlinelibrary.wiley.com/doi/full/10.1111/mec.14514
+Murray et al.	2017	Passenger pigeon	Animal	WGS	1	USA	Historical	?		https://science.sciencemag.org/content/358/6365/951
+Hung et al.	2014	Passenger pigeon	Animal	WGS	4	USA	Historical	5-20x	Extinct pigeon, historical samples	https://www.pnas.org/content/111/29/10636
+Frantz et al.	2019	Pig	Animal	WGS	9	West Eurasia	Holocene	0->10x		https://www.pnas.org/content/116/35/17231
+Ramírez et al. 	2015	Pig	Animal	WGS	1	Spain	Historical	0.1x	Historical Spanish pig	https://www.nature.com/articles/hdy201481
+Lan et al.	2022	Polar bear	Animal	WGS	1	Svalbard	Pleistocene	10x	~120ky old mandible	https://www.biorxiv.org/content/10.1101/2021.12.11.472228v2
+Wang et al.	2022	Polar bear	Animal	WGS	1	Alaska	Pleistocene	20x		https://www.nature.com/articles/s41559-022-01753-8
+Miller et al.	2012	Polar bear	Animal	WGS	1	Svalbard	Pleistocene	?	~120ky old mandible	https://www.pnas.org/content/109/36/E2382
+Jónsson et al.	2014	Quagga	Animal	WGS	1	South Africa	Historical	8x	Extinct zebra-relative, from hair	https://www.pnas.org/content/111/52/18655
+Lord et al.	2020	Rhino	Animal	WGS	1	Siberia	Late Pleistocene	13.6x	"sequenced a woolly rhinoceros nuclear genome"	https://www.sciencedirect.com/science/article/pii/S096098222031071X?via%3Dihub
+Liu et al.	2021	Rhinos (various)	Animal	WGS	4	Siberia	Late Pleistocene	25x, 9x, 12x, 35x		https://www.sciencedirect.com/science/article/pii/S0092867421008916
+Beichman et al.	2021	Sea otter	Animal	capture	3	California	Holocene	1.5–3.5x	Capture of 50Mb sequence	https://onlinelibrary.wiley.com/doi/full/10.1111/mec.16334
+Kaptan et al.	2025	Sheep	Animal	WGS	17	West Eurasia	Holocene	0.008-2x	"17 were produced in this study", "4 [from Yurtman et al. 2021] were further deep-sequenced"	https://academic.oup.com/mbe/article/41/10/msae158/7826489
+Larsson et al.	2023	Sheep	Animal	WGS	5	Baltic Sea	Holocene	0.1-11x		https://academic.oup.com/gbe/advance-article/doi/10.1093/gbe/evae114/7682331
+Rossi et al.	2021	Sheep	Animal	WGS	1	Iran	Holocene	4x	Saltmine sheep mummy	https://royalsocietypublishing.org/doi/10.1098/rsbl.2021.0222
+Yurtman et al.	2021	Sheep	Animal	WGS+capture	4	Turkey	Holocene	~0.1x		https://www.nature.com/articles/s42003-021-02794-8
+Pedersen et al.	2021	Short-faced bear	Animal	WGS	3	Yukon	Pleistocene	1.5-26x	50-30 kya	https://www.sciencedirect.com/science/article/pii/S0960982221005406
+Smith et al.	2019	Sorghum	Plant	WGS	9	Nubia	Neolithic	4-15x		https://www.nature.com/articles/s41477-019-0397-9
+Le Duc et al.	2022	Stellers sea cow	Animal	WGS	12	Beringia	Historical	2-15x	Extinct Stellers sea cow	https://www.science.org/doi/10.1126/sciadv.abl6496
+Sharko et al.	2021	Stellers sea cow	Animal	WGS	1	Beringia	Historical	25x		https://www.nature.com/articles/s41467-021-22567-5
+Kirch et al	2021	Stickleback	Animal	WGS	2	Norway	Pleistocene	<1x		https://www.sciencedirect.com/science/article/pii/S0960982221002682
+Palkopoulou et al. 	2018	Straight-tusked elephants	Animal	WGS	1	Germany	Pleistocene	15x		https://www.pnas.org/content/115/11/E2566
+Meyer et al.	2017	Straight-tusked elephants	Animal	WGS	2	Germany	Pleistocene	0.14x, 0.65x		https://elifesciences.org/articles/25413
+Pan et al.	2024	Sussemione	Animal	WGS	4	Mongolia	Holocene	0.3-2.2x	Sussemione (Equus ovodovi)	https://onlinelibrary.wiley.com/doi/10.1111/mec.17527
+Cai et al.	2022	Sussemione	Animal	WGS	26	China	Holocene	0.002–13.4x	Sussemione (Equus ovodovi)	https://elifesciences.org/articles/73346
+Sun et al.	2023	Tiger	Animal	WGS	15	Asia	Holocene	0.5-8x	Ancient 8x, then 13 historical	https://www.nature.com/articles/s41559-023-02185-8
+Hu et al.	2022	Tiger	Animal	WGS	1	China	Pleistocene	0.00006x?	"An extinct and deeply divergent tiger lineage from northeastern China"	https://royalsocietypublishing.org/doi/10.1098/rspb.2022.0617#
+Ericson et al.	2022	Vulture	Animal	WGS	1	Peru	Pleistocene	1.25x	Coragyps occidentalis	https://www.nature.com/articles/s42003-022-03811-0
+Pérez-Escobar et al.	2022	Watermelon	Plant	WGS	3	North Africa	Holocene	0.04-6x	Different species from the domesticated watermelon	https://academic.oup.com/mbe/advance-article/doi/10.1093/molbev/msac168/6652436
+Scott et al.	2019	Wheat	Plant	WGS	1	Egypt	Holocene	0.5x		https://www.nature.com/articles/s41477-019-0534-5
+Doyle et al.	2022	Whipworm	Animal	WGS	17	Europe	Medieval	0.02-3x		https://www.nature.com/articles/s41467-022-31487-x
+Özkan et al.	2024	Wild ass	Animal	WGS	3	Turkey	Holocene	0.6-6.4X		https://onlinelibrary.wiley.com/doi/10.1111/mec.17440
+Pan et al.	2024	Wild ass	Animal	WGS	21	Central Eurasia	Holocene	0.1-3.4	Includes 1 E. hydruntinus (European wild ass)	https://onlinelibrary.wiley.com/doi/10.1111/mec.17527
+Gojobori et al.	2024	Wolf	Animal	WGS	9	Japan	Historical	7-99x		https://www.nature.com/articles/s41467-024-46124-y
+Elalouf et al.	2022	Wolf	Animal	WGS	1	Europe	Pleistocene	2x	Coprolite sample, also contains cave bear DNA	https://onlinelibrary.wiley.com/doi/10.1002/ece3.9238
+Segawa et al.	2022	Wolf	Animal	WGS	2	Japan	Pleistocene & Holocene	2x	1 5kya, 1 35kya	https://www.sciencedirect.com/science/article/pii/S0960982222006030
+Bergström et al.	2022	Wolf	Animal	WGS	67	Global	Pleistocene & Holocene	~1x		https://www.nature.com/articles/s41586-022-04824-9
+Niemann et al.	2021	Wolf	Animal	WGS	1	Japan	Historical	4x	Extinct Honshu wolf	https://www.sciencedirect.com/science/article/pii/S2589004220311019
+Ramos-Madrigal et al.	2021	Wolf	Animal	WGS	4	Siberia	Late Pleistocene	5-15x		https://www.sciencedirect.com/science/article/pii/S0960982220315062
+Sinding et al.	2020	Wolf	Animal	WGS	1	Siberia	Pleistocene	~4x	Yana wolf	https://science.sciencemag.org/content/368/6498/1495?rss=1
+Skoglund et al.	2015	Wolf	Animal	WGS	1	Siberia	Late Pleistocene	1x	Taimyr, 35kya	https://www.sciencedirect.com/science/article/pii/S0960982215004327
+Chen et al.	2023	Yak	Animal	WGS	1	Tibet	Holocene	0.07		https://www.science.org/doi/full/10.1126/sciadv.adi6857
