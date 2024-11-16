@@ -1,0 +1,85 @@
+---
+title: "Figure 1: Figure Generation"
+author: "James Fellows Yates"
+format: html
+editor: visual
+---
+
+This notebook describes the generation of a stacked bar plot describing the number of publicly available data samples, grouped by the most common ancient DNA data sample types (excluding sediment DNA). 
+
+## Required libraries and versions
+
+For plotting we need R and the the following libraries, and versions
+
+```{r, message=F}
+library(tidyverse)
+library(ggsci)
+```
+
+For version information
+
+```{r}
+sessionInfo()
+```
+
+## Raw data loading and auxiliary data
+
+We can load the prepared data from the previous notebook.
+
+```{r}
+data_subset_combined <- read_tsv('bergstrom2024comment_figure1_dataforplotting.tsv')
+```
+
+We get the full list of years from all sample types to guide the legnth of the  X-axis.
+
+```{r}
+data_year_range = seq(
+  min(data_subset_combined$publication_year),
+  max(data_subset_combined$publication_year),
+)
+```
+
+For more natural ordering of the stacked bar plots, we order find the order of most to least number of samples per group (so more numerous sample types go on the bottom of the stack).
+
+```{r}
+data_type_order <- data_subset_combined |>
+  select(sample_type, n_samples_cumul) |> 
+  group_by(sample_type) |> 
+  summarise(current = max(n_samples_cumul)) |> 
+  arrange(current) |> 
+  mutate(sample_type = as_factor(sample_type)) |> 
+  pull(sample_type)
+```
+
+## Plotting
+
+We can now plot a stacked bar plot roughly following what [other Nature comment piece figures](https://www.nature.com/articles/d41586-024-03680-z) look like, namely:
+
+- A NPG-derived colour palette
+- Minimal grid lines (only major y-axis indicators with dotted line)
+- No Y-axis label 
+- A nicer Sans Serif font
+
+```{r}
+plot_final <- ggplot(data_subset_combined |> mutate(sample_type = factor(sample_type, levels = data_type_order)), aes(publication_year, n_samples_cumul, fill = sample_type)) +
+  geom_col() +
+  scale_fill_npg(breaks = data_type_order) +
+  theme_classic() +
+  theme(
+    axis.line.y = element_blank(),
+    legend.position = "top",
+    panel.grid.major.y = element_line(colour = "black", linewidth = 0.5, linetype = 'dotted'),
+    text = element_text(family = "Albert Sans"),
+    plot.title = element_text(face = "bold", hjust = 0),
+    plot.title.position = 'plot', 
+  ) +
+  xlab('') +
+  ylab('Number of samples with sequencing data') + 
+  guides(fill = guide_legend(title = "")) +
+  labs(title = "ANNUAL AVAILABLE PALAEOGENOMIC DATA", subtitle = "The number of publically accessible ancient DNA data from a range of sample types \nis steadily increasing.")
+
+plot_final
+
+ggsave(plot_final, filename = 'figure1.png', device = png, dpi = 300, width = 2200, height = 1250, units = 'px')
+```
+

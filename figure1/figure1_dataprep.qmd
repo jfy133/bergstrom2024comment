@@ -1,0 +1,274 @@
+---
+title: "Figure 1: Data Preparation"
+format: html
+editor: visual
+---
+
+## Required Libraries
+
+::: callout-note
+All bash commands assumed executed from the root of this repository
+:::
+
+This notebook uses the following software and versions to pull data:
+
+-   miniforge v24.7.1
+-   amdirt=1.6.2
+
+This can be recreated as follows.
+
+<!--
+TODO: make a lock file?
+-->
+
+```{bash, eval=F}
+conda env create -f figure1/environment.yaml
+conda activate bergstrom2024
+```
+
+For data preparation and plotting we are using R and the following packages.
+
+```{r, message=F}
+library(tidyverse)
+library(ggsci)
+```
+
+Resolving to the final versions.
+
+```{r}
+sessionInfo()
+```
+
+## Getting Raw Data
+
+This plot will show number of ancient metagenomes from host-associated contexts (e.g. microbiomes), ancient microbial genomes, ancient human genome/genome-wide data indexed in published repositories.
+
+We will also include the number of animal, plants, and fungi genomes manually collected by A. Bertström (pers. comm.)
+
+Ancient environmental metagenomes are excluded as I believe AncientMetagenomeDir (which does offer thes) has a gross under-estimate of these, and I'm not sure if there is another authoritative source for this type of data.
+
+### Ancient Host-Associated Metagenomes
+
+Download latest ancient host-associated metagenome data from AncientMetagenomeDir using AMDirT.
+
+```{bash, eval=F}
+AMDirT download -t ancientsinglegenome-hostassociated -y samples -r v24.09.0 -o figure1/
+# mv ancientmetagenome-hostassociated_samples_v24.09.0.tsv figure1/ -> apparently `-o` ignored?
+```
+
+Parse the file to extract just date and sample information; calculating cumulative sum in each year.
+
+```{r}
+data_raw_ancientmetagenome <- read_tsv('ancientmetagenome-hostassociated_samples_v24.09.0.tsv')
+
+data_subset_ancientmetagenome <- data_raw_ancientmetagenome |> 
+  select(publication_year) |> 
+  group_by(publication_year) |> 
+  summarise(
+    n_samples_per = n(),
+    sample_type = 'Ancient host-associated metagenome'
+    ) |> 
+  mutate(n_samples_cumul = cumsum(n_samples_per))
+```
+
+### Ancient Microbial Genomes
+
+Download latest ancient host-associated singleagenome data from AncientMetagenomeDir using AMDirT.
+
+```{bash, eval=F}
+AMDirT download -t ancientsinglegenome-hostassociated -y samples -r v24.09.0 -o figure1/
+# mv ancientsinglegenome-hostassociated_samples_v24.09.0.tsv figure1/ -> apparently `-o` ignored?
+```
+
+Parse the file to extract just date and sample information; calculating cumulative sum in each year.
+
+```{r}
+data_raw_ancientmicrobialgenome <- read_tsv('ancientsinglegenome-hostassociated_samples_v24.09.0.tsv')
+
+data_subset_ancientmicrobialgenome <- data_raw_ancientmicrobialgenome |> 
+  select(publication_year) |> 
+  group_by(publication_year) |> 
+  summarise(
+    n_samples_per = n(),
+    sample_type = 'Ancient microbial genome'
+    ) |> 
+  mutate(n_samples_cumul = cumsum(n_samples_per))
+```
+
+### Ancient Human Genomes
+
+::: callout-note
+I initially wanted to use the Poseidon project and tools for this but apparently it is currently behind on releases so not used here.
+:::
+
+Download the annotation file from the Harvard dataverse record the latest v62 AADR release. 
+
+```{bash, eval=F}
+wget -O figure1/v62.0_1240k_public.anno https://dataverse.harvard.edu/api/access/datafile/10537413
+```
+
+
+First we remove modern human data, then we have perform a unique on the master ID.
+
+This is the closest to a sample/individual identifier, however AADR also has a 'Genetic ID' that corresponds to different library or genotype types. 
+
+The AADR v62 release report 13571 unique individuals, however I identified that there are many duplicate Master ID entries that seem to be derived from different library types (e.g. KPT002) - which after collapsing the duplicates corresponds to around ~12.7k individuals.
+I presume the 13.5k number of reported individuals is a mistake from the AADR team taking the wrong column. 
+Therefore here I will rely on the unique master ID count for the plot as I think this better closely matches a single 'genome' (or rather genome-wide data in this case)
+
+We then group per year and calculate the per-year sum and cumulative across this.
+
+```{r}
+data_raw_ancienthuman <- read_tsv('v62.0_1240k_public.anno')
+
+data_intermediate_ancienthuman <- data_raw_ancienthuman |> 
+  rename(
+    id = `Master ID`, 
+    publication_year = `Year data from this individual was first published [for a present-day individuals we give the data of the data reported here; missing GreenScience 2010 (Vi33.15, Vi33.26), Olalde2018 (I2657), RasmussenNature2010 (Australian)]`, 
+    age = `Date mean in BP in years before 1950 CE [OxCal mu for a direct radiocarbon date, and average of range for a contextual date]`
+  ) |> 
+  select(
+    id, publication_year, age
+    ) |> 
+  filter(age > 0) |> 
+  unique() |> 
+  select(id, publication_year) |> 
+  mutate(publication_year = as.numeric(publication_year))
+
+template_ancienthuman <- seq(min(data_intermediate_ancienthuman$publication_year),
+                             2024,
+                             1) |>
+  as_tibble_col(column_name = 'publication_year') |>
+  mutate(n_samples_per = 0) |>
+  bind_rows(data_intermediate_ancienthuman)
+  
+data_subset_ancienthuman <- template_ancienthuman |> 
+  group_by(publication_year) |> 
+
+```
+
+## Non-human genomes
+
+We also include non-human eukaryote genomes - namely plants and animals.
+
+This comes from Bergström (pers. comm.) rather than a published dataset.
+
+```{r}
+data_raw_ancientnonhuman <- read_tsv('nonhuman-published-genomes-AB151124.tsv')
+```
+
+The filtering procedure is the same across all
+
+For animals
+
+```{r}
+data_intermediate_ancientanimal <- data_raw_ancientnonhuman |>
+  filter(kingdom == 'Animal',
+         year < 2025) |>
+  select(year, nr_genomes) |>
+  group_by(year)
+
+template_ancientanimal <- seq(min(data_intermediate_ancientanimal$year),
+                             2024,
+                             1) |>
+  as_tibble_col(column_name = 'year') |>
+  mutate(nr_genomes = 0) |>
+  bind_rows(data_intermediate_ancientanimal)
+
+data_subset_ancientanimal <- template_ancientanimal |> 
+  group_by(year) |> 
+  mutate(n_samples_per = sum(nr_genomes)) |>
+  select(year, n_samples_per) |> 
+  unique() |>
+  rename(publication_year = year, ) |>
+  ungroup() |>
+  select(publication_year, n_samples_per) |>
+  arrange(publication_year) |>
+  mutate(n_samples_cumul = cumsum(n_samples_per),
+         sample_type = 'Ancient animal genome')
+```
+
+For ancient plants
+
+```{r}
+data_intermediate_ancientplant <- data_raw_ancientnonhuman |>
+  filter(kingdom == 'Plant',
+         year < 2025) |>
+  select(year, nr_genomes) |>
+  group_by(year)
+
+template_ancientplant <- seq(min(data_intermediate_ancientplant$year),
+                             2024,
+                             1) |>
+  as_tibble_col(column_name = 'year') |>
+  mutate(nr_genomes = 0) |>
+  bind_rows(data_intermediate_ancientplant)
+
+data_subset_ancientplant <- template_ancientplant |> 
+  group_by(year) |> 
+  mutate(n_samples_per = sum(nr_genomes)) |>
+  select(year, n_samples_per) |> 
+  unique() |>
+  rename(publication_year = year, ) |>
+  ungroup() |>
+  select(publication_year, n_samples_per) |>
+  arrange(publication_year) |>
+  mutate(n_samples_cumul = cumsum(n_samples_per),
+         sample_type = 'Ancient plant genome')
+
+```
+
+For ancient fungi
+
+```{r}
+data_intermediate_ancientfungi <- data_raw_ancientnonhuman |>
+  filter(kingdom == 'Fungi',
+         year < 2025) |>
+  select(year, nr_genomes) |>
+  group_by(year)
+
+template_ancientfungi <- seq(min(data_intermediate_ancientfungi$year),
+                             2024,
+                             1) |>
+  as_tibble_col(column_name = 'year') |>
+  mutate(nr_genomes = 0) |>
+  bind_rows(data_intermediate_ancientfungi)
+
+data_subset_ancientfungi <- template_ancientfungi |> 
+  group_by(year) |> 
+  mutate(n_samples_per = sum(nr_genomes)) |>
+  select(year, n_samples_per) |> 
+  unique() |>
+  rename(publication_year = year, ) |>
+  ungroup() |>
+  select(publication_year, n_samples_per) |>
+  arrange(publication_year) |>
+  mutate(n_samples_cumul = cumsum(n_samples_per),
+         sample_type = 'Ancient fungi genome')
+
+```
+
+### Combine Data
+
+Combine the different datasets, and get some basic additional information for better plotting readability.
+
+```{r}
+data_subset_combined <- data_subset_ancientmetagenome |>
+  bind_rows(
+    list(
+      data_subset_ancienthuman,
+      data_subset_ancientmicrobialgenome,
+      data_subset_ancientanimal,
+      data_subset_ancientplant,
+      data_subset_ancientfungi
+    )
+  ) |>
+  arrange(publication_year)
+
+```
+
+Save the resulting data for plotting
+
+```{r}
+write_tsv(data_subset_combined,file = "bergstrom2024comment_figure1_dataforplotting.tsv")
+```
