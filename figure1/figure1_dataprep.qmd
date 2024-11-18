@@ -61,14 +61,26 @@ Parse the file to extract just date and sample information; calculating cumulati
 ```{r}
 data_raw_ancientmetagenome <- read_tsv('ancientmetagenome-hostassociated_samples_v24.09.0.tsv')
 
-data_subset_ancientmetagenome <- data_raw_ancientmetagenome |> 
+data_intermediate_ancientmetagenome <- data_raw_ancientmetagenome |> 
   select(publication_year) |> 
   group_by(publication_year) |> 
   summarise(
     n_samples_per = n(),
-    sample_type = 'Ancient host-associated metagenome'
-    ) |> 
-  mutate(n_samples_cumul = cumsum(n_samples_per))
+    )
+
+template_ancientmetagenome <- seq(min(data_intermediate_ancientmetagenome$publication_year),
+                             2024,
+                             1) |>
+  as_tibble_col(column_name = 'publication_year') |>
+  mutate(n_samples_per = 0) |>
+  bind_rows(data_intermediate_ancientmetagenome) |> 
+  arrange(publication_year)
+  
+data_subset_ancientmetagenome <- template_ancientmetagenome |>
+  group_by(publication_year) |> 
+  summarise(n_samples_total = sum(n_samples_per),
+         sample_type = 'Ancient host-associated metagenome') |> 
+  mutate(n_samples_cumul = cumsum(n_samples_total))
 ```
 
 ### Ancient Microbial Genomes
@@ -85,14 +97,26 @@ Parse the file to extract just date and sample information; calculating cumulati
 ```{r}
 data_raw_ancientmicrobialgenome <- read_tsv('ancientsinglegenome-hostassociated_samples_v24.09.0.tsv')
 
-data_subset_ancientmicrobialgenome <- data_raw_ancientmicrobialgenome |> 
+data_intermediate_ancientmicrobialgenome <- data_raw_ancientmicrobialgenome |> 
   select(publication_year) |> 
   group_by(publication_year) |> 
   summarise(
     n_samples_per = n(),
-    sample_type = 'Ancient microbial genome'
-    ) |> 
-  mutate(n_samples_cumul = cumsum(n_samples_per))
+    )
+
+template_ancientmicrobialgenome <- seq(min(data_intermediate_ancientmicrobialgenome$publication_year),
+                             2024,
+                             1) |>
+  as_tibble_col(column_name = 'publication_year') |>
+  mutate(n_samples_per = 0) |>
+  bind_rows(data_intermediate_ancientmicrobialgenome) |> 
+  arrange(publication_year)
+  
+data_subset_ancientmicrobialgenome <- template_ancientmicrobialgenome |>
+  group_by(publication_year) |> 
+  summarise(n_samples_total = sum(n_samples_per),
+         sample_type = 'Ancient microbial genome') |> 
+  mutate(n_samples_cumul = cumsum(n_samples_total))
 ```
 
 ### Ancient Human Genomes
@@ -125,15 +149,17 @@ data_intermediate_ancienthuman <- data_raw_ancienthuman |>
   rename(
     id = `Master ID`, 
     publication_year = `Year data from this individual was first published [for a present-day individuals we give the data of the data reported here; missing GreenScience 2010 (Vi33.15, Vi33.26), Olalde2018 (I2657), RasmussenNature2010 (Australian)]`, 
-    age = `Date mean in BP in years before 1950 CE [OxCal mu for a direct radiocarbon date, and average of range for a contextual date]`
+    age = `Method for Determining Date; unless otherwise specified, calibrations use 95.4% intervals from OxCal v4.4.2 Bronk Ramsey (2009); r5; Atmospheric data from Reimer et al (2020)` ## switch to method of determination
   ) |> 
   select(
     id, publication_year, age
     ) |> 
-  filter(age > 0) |> 
+  filter(age != 'Modern') |> ## != modern
   unique() |> 
   select(id, publication_year) |> 
-  mutate(publication_year = as.numeric(publication_year))
+  mutate(publication_year = as.numeric(publication_year)) |> 
+  group_by(publication_year) |> 
+  summarise(n_samples_per = n())
 
 template_ancienthuman <- seq(min(data_intermediate_ancienthuman$publication_year),
                              2024,
@@ -144,6 +170,10 @@ template_ancienthuman <- seq(min(data_intermediate_ancienthuman$publication_year
   
 data_subset_ancienthuman <- template_ancienthuman |> 
   group_by(publication_year) |> 
+  summarise(n_samples_total = sum(n_samples_per)) |> 
+  mutate(n_samples_cumul = cumsum(n_samples_total),
+          sample_type = 'Ancient human genome')
+  
 
 ```
 
@@ -177,14 +207,14 @@ template_ancientanimal <- seq(min(data_intermediate_ancientanimal$year),
 
 data_subset_ancientanimal <- template_ancientanimal |> 
   group_by(year) |> 
-  mutate(n_samples_per = sum(nr_genomes)) |>
-  select(year, n_samples_per) |> 
+  mutate(n_samples_total = sum(nr_genomes)) |>
+  select(year, n_samples_total) |> 
   unique() |>
   rename(publication_year = year, ) |>
   ungroup() |>
-  select(publication_year, n_samples_per) |>
+  select(publication_year, n_samples_total) |>
   arrange(publication_year) |>
-  mutate(n_samples_cumul = cumsum(n_samples_per),
+  mutate(n_samples_cumul = cumsum(n_samples_total),
          sample_type = 'Ancient animal genome')
 ```
 
@@ -206,14 +236,14 @@ template_ancientplant <- seq(min(data_intermediate_ancientplant$year),
 
 data_subset_ancientplant <- template_ancientplant |> 
   group_by(year) |> 
-  mutate(n_samples_per = sum(nr_genomes)) |>
-  select(year, n_samples_per) |> 
+  mutate(n_samples_total = sum(nr_genomes)) |>
+  select(year, n_samples_total) |> 
   unique() |>
   rename(publication_year = year, ) |>
   ungroup() |>
-  select(publication_year, n_samples_per) |>
+  select(publication_year, n_samples_total) |>
   arrange(publication_year) |>
-  mutate(n_samples_cumul = cumsum(n_samples_per),
+  mutate(n_samples_cumul = cumsum(n_samples_total),
          sample_type = 'Ancient plant genome')
 
 ```
@@ -236,14 +266,14 @@ template_ancientfungi <- seq(min(data_intermediate_ancientfungi$year),
 
 data_subset_ancientfungi <- template_ancientfungi |> 
   group_by(year) |> 
-  mutate(n_samples_per = sum(nr_genomes)) |>
-  select(year, n_samples_per) |> 
+  mutate(n_samples_total = sum(nr_genomes)) |>
+  select(year, n_samples_total) |> 
   unique() |>
   rename(publication_year = year, ) |>
   ungroup() |>
-  select(publication_year, n_samples_per) |>
+  select(publication_year, n_samples_total) |>
   arrange(publication_year) |>
-  mutate(n_samples_cumul = cumsum(n_samples_per),
+  mutate(n_samples_cumul = cumsum(n_samples_total),
          sample_type = 'Ancient fungi genome')
 
 ```
