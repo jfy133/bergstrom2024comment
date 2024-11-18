@@ -140,6 +140,8 @@ The AADR v62 release report 13571 unique individuals, however I identified that 
 I presume the 13.5k number of reported individuals is a mistake from the AADR team taking the wrong column. 
 Therefore here I will rely on the unique master ID count for the plot as I think this better closely matches a single 'genome' (or rather genome-wide data in this case)
 
+We will also need to remove modern individuals from using the 'Method for determining date' (i.e, removing individuals that didn't require data inference).
+
 We then group per year and calculate the per-year sum and cumulative across this.
 
 ```{r}

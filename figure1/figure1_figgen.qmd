@@ -80,6 +80,6 @@ plot_final <- ggplot(data_subset_combined |> mutate(sample_type = factor(sample_
 
 plot_final
 
-ggsave(plot_final, filename = 'figure1.png', device = png, dpi = 300, width = 2200, height = 1250, units = 'px')
+ggsave(plot_final, filename = 'bergstrom2024comment_figure1_exampleplot.png', device = png, dpi = 300, width = 2200, height = 1250, units = 'px')
 ```
 

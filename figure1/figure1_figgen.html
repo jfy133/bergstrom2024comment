@@ -161,11 +161,11 @@ loaded via a namespace (and not attached):
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data_subset_combined <span class="ot">&lt;-</span> <span class="fu">read_tsv</span>(<span class="st">'bergstrom2024comment_figure1_dataforplotting.tsv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Rows: 69 Columns: 4
+<pre><code>Rows: 76 Columns: 4
 ── Column specification ────────────────────────────────────────────────────────
 Delimiter: "\t"
 chr (1): sample_type
-dbl (3): publication_year, n_samples_per, n_samples_cumul
+dbl (3): publication_year, n_samples_total, n_samples_cumul
 
 ℹ Use `spec()` to retrieve the full column specification for this data.
 ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
@@ -224,7 +224,7 @@ dbl (3): publication_year, n_samples_per, n_samples_cumul
 </figure>
 </div>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(plot_final, <span class="at">filename =</span> <span class="st">'figure1.png'</span>, <span class="at">device =</span> png, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">width =</span> <span class="dv">2200</span>, <span class="at">height =</span> <span class="dv">1250</span>, <span class="at">units =</span> <span class="st">'px'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(plot_final, <span class="at">filename =</span> <span class="st">'bergstrom2024comment_figure1_exampleplot.png'</span>, <span class="at">device =</span> png, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">width =</span> <span class="dv">2200</span>, <span class="at">height =</span> <span class="dv">1250</span>, <span class="at">units =</span> <span class="st">'px'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 
